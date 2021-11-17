@@ -24,6 +24,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
 </head>
@@ -719,11 +720,11 @@
                   <div class="col-md-6">
                     <div class="title-box-2">
                       <h5 class="title-left">
-                        Send Message Us
+                        Send Message Uss
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <form>
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
@@ -745,17 +746,18 @@
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                              <textarea class="form-control" name="message" id='message' rows="5" placeholder="Message"
                                 required></textarea>
                             </div>
                           </div>
-                          <div class="col-md-12 text-center my-3">
+                          <!-- <div class="col-md-12 text-center my-3">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
+                          </div> -->
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                            <button id='mybtn' class="button button-a button-big button-rouded">Send
+                              Message</button>
                           </div>
                         </div>
                       </form>
@@ -835,6 +837,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 
