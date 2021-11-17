@@ -1,4 +1,5 @@
 // const axios = require("axios");
+
 document.getElementById("mybtn").addEventListener("click", async (event) => {
   //   import axios from "axios";
   event.preventDefault();
@@ -7,8 +8,8 @@ document.getElementById("mybtn").addEventListener("click", async (event) => {
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
 
-  //   const serverUrl = "http://localhost:5000";
-  const serverUrl = "https://messforportfolio.herokuapp.com/post";
+  const serverUrl = "http://localhost:5000";
+  const serverUrl = "https://messforportfolio.herokuapp.com";
 
   const data = {
     username: username,
@@ -28,9 +29,19 @@ document.getElementById("mybtn").addEventListener("click", async (event) => {
 
     .then(function (response) {
       console.log(response);
+      Swal.fire({
+        title: "success!",
+        text: "success",
+        icon: "success",
+      });
     })
     .catch(function (error) {
       console.log(error);
+      Swal.fire({
+        title: "Error!",
+        text: "Error",
+        icon: "error",
+      });
     });
 });
 // document.getElementById("mybtn").addEventListener("click", (e) => {
