@@ -8,7 +8,7 @@ document.getElementById("mybtn").addEventListener("click", async (event) => {
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
 
-  const serverUrl = "http://localhost:5000";
+  //   const serverUrl = "http://localhost:5000";
   const serverUrl = "https://messforportfolio.herokuapp.com";
 
   const data = {
