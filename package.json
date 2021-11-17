@@ -1,7 +1,7 @@
 {
-  "name": "DevFolio",
+  "name": "myportfolio",
   "version": "1.0.0",
-  "description": "Thanks for downloading this template!",
+  "description": "Portfolio ",
   "main": "main.js",
   "dependencies": {
     "axios": "^0.24.0"
